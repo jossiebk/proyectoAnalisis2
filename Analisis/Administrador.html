@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Administrador</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/media-queries.css">         
+
+   <!-- Script
+   =================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	=================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+   <div id="top"></div>
+   <div id="preloader"> 
+	   <div id="status">
+         <img src="images/loader.gif" height="60" width="60" alt="">
+         <div class="loader">Loading...</div>
+      </div>
+   </div>
+
+   <!-- Header
+   =================================================== -->
+   <header id="main-header">
+
+   	<div class="row header-inner">
+
+	      <div class="logo">
+	         <a class="smoothscroll" href="#hero">Puremedia.</a>
+	      </div>
+
+	      <nav id="nav-wrap">         
+	         
+	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+	         	<span class='menu-text'>Show Menu</span>
+	         	<span class="menu-icon"></span>
+	         </a>
+         	<a class="mobile-btn" href="#" title="Hide navigation">
+         		<span class='menu-text'>Hide Menu</span>
+         		<span class="menu-icon"></span>
+         	</a>         
+
+	         <ul id="nav" class="nav">
+	            <li class="current"><a class="smoothscroll" href="#hero">Home.</a></li>
+		         <li><a class="smoothscroll" href="#portfolio"> Iniciar Sesion</a></li>
+	            <li><a class="smoothscroll" href="#services">Informacion</a></li>            
+	            <li><a class="smoothscroll" href="#contact">Contactenos.</a></li>
+	         </ul> 
+
+	      </nav> <!-- /nav-wrap -->	      
+
+	   </div> <!-- /header-inner -->
+
+   </header>
+
+
+   <!-- Page Title
+   ================================================== -->
+   <section id="page-title">	
+   	  
+	<div class="row hero-content">
+
+			<div class="twelve columns flex-container">
+
+			   <div id="hero-slider" class="flexslider">
+
+				   <ul class="slides">
+					   <!-- Slide -->
+					   <li>						
+							<div class="flex-caption">
+								<h1 >Administrador.</h1>	
+								<p><a class="button stroke smoothscroll" href="#content">Procedimientos</a></p>									   
+							</div>					
+					   </li>					              
+
+				   </ul>
+
+			   </div> <!-- .flexslider -->				   
+
+	      </div> <!-- .flex-container -->      
+
+		</div> <!-- .hero-content -->	   
+   
+
+   </section> <!-- /page-title -->
+
+
+   <!-- Content 
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+	         <h1> Operaciones para un cliente</h1>
+	         		<p>Crear cuentahabiente:</p>
+		      		<p>
+		      			<a href="#about" class="button orange">Crear Cuentahabiente</a>
+		      		</p>
+
+		      		<p>Eliminar cuentahabiente:</p>
+		      		<p>
+		      			<a href="#about" class="button orange">Eliminar Cuentahabiente</a>
+		      		</p>
+	      </div>
+
+      </div> 
+     
+
+   </section> <!-- /about -->
+
+   <section id="about">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Crear cuentahabiente<span>.</span></h1>
+				 <form name="formulario" method="post" action="Consulta.php">
+
+				Nombre: <input type="text" name="nombre" value="">
+
+				<li><a class="smoothscroll" onclick="location.href='Consulta.php'"> Administracion</a></li>
+
+				</form>
+
+
+	      </div>
+	         <h1>Eliminar cuentahabiente<span>.</span></h1>
+	         <form action="" method="post" id="ElimnarCuentahabiente" name="contactForm">
+	  					<fieldset>
+
+	                  <div class="group">
+	  						   <label for="CENombre">Nombre <span class="required">*</span></label>
+	  						   <input type="text" value="" size="35" id="CENombre" name="CENombre">
+	                  </div>
+
+	                  <div class="group">
+	  						   <label for="CECodigo">Codigo <span class="required">*</span></label>
+	  						   <input type="text" value="" size="35" id="CECodigo" name="CECodigo">
+	                  </div>
+
+		      			<a href="#" class="button orange">Aceptar Transaccion</a>
+
+	  					</fieldset>
+	  				   </form> <!-- /contactForm -->
+
+
+	      </div>
+
+      </div>       
+
+   </section> 
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>   
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/backstretch.js"></script> 
+   <script src="js/waypoints.js"></script>  
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
